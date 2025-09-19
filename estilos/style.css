@@ -61,3 +61,61 @@ nav#menu a:hover {
   color: var(--destaque);
   transition: background-color 0.5s, color 0.5s;
 }
+
+main {
+display: grid;
+grid-template-columns: auto 90vw auto;
+margin-top: 10px;
+}
+
+section#ficha{
+background-color: var(--fundo-card);
+padding: 20px;
+border : 8px;
+grid-column:2 ;
+
+}
+
+section#ficha img.foto{
+  width: 200px;
+  aspect-ratio: 1/1; /*manter a proporção da imagem mesmo se alterar o tamanho dela, determinar o formato, quadrada(instagran=m), retangular(orizontal) ...*/
+  /*object-fit: cover; /*cortar a imagem para preencher o espaço determinado*/
+  overflow: hidden;
+  border-radius: 51%;
+  border: 8px solid var(--fundo-card);
+  /*outline: var(--destaque) ;*/
+  outline: #0077ff solid 4px;
+  display: block;
+  margin: auto;
+  /*margin-bottom: 10px;*/
+
+  
+  
+}
+
+section#ficha h1{
+  color: var(--destaque);
+  margin: 15px 0;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+div#social{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px 0;
+  align-items: center;
+}
+div#social a{
+  text-decoration: none;
+  color: var(--destaque);
+  font-size: 1.5em;
+  transition: 0.5s;
+}
+div#social a:hover{
+  color: var(--destaque-inverso);
+  transition: color 0.5s;
+}
+
+
