@@ -39,9 +39,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: sticky; /*Mantém fixo o header*/
+  top: 0; /*Define aonde ficará fixo */
+  z-index: 1; /*Muda as camadas, o video passa por tras do header com o "1"*/
 
 }
 nav#menu ul{
